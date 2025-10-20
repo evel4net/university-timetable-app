@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UBB.MainPage"
+			 Title="UBB Timetable">
+
+	<Grid
+		Padding="20"
+		ColumnSpacing="10"
+		RowSpacing="10">
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="70" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+
+		<Label
+			x:Name="WeekLabel"
+			Text="Week 1"
+			TextColor="#512BD4"
+			Grid.Row="0"
+			Grid.Column="0"
+			VerticalTextAlignment="Center"
+			HorizontalTextAlignment="Center"
+			>
+		</Label>
+
+		<Switch
+			x:Name="WeekSwitch"
+			Grid.Row="0"
+			Grid.Column="1"
+			HorizontalOptions="Start"
+			Toggled="OnSwitchToggle">
+		</Switch>
+
+		<Button
+			x:Name="buttonReload"
+			ImageSource="refresh.png"
+			BackgroundColor="LightGrey"
+			Grid.Row="0"
+			Grid.Column="4"
+			Clicked="OnReloadButtonClick">
+
+		</Button>
+
+		<ScrollView
+		x:Name="BlocksView"
+		MinimumHeightRequest="25"
+		MinimumWidthRequest="25"
+		VerticalScrollBarVisibility="Always"
+		Orientation="Vertical"
+		Grid.Row="1"
+		Grid.ColumnSpan="5">
+			<VerticalStackLayout
+				x:Name="BlocksLayout">
+			</VerticalStackLayout>
+		</ScrollView>
+
+		<Button
+			x:Name="buttonMonday"
+			Text="M"
+			FontSize="20"
+			Grid.Row="2"
+			Grid.Column="0"
+			CommandParameter="Monday"
+			Clicked="OnDayButtonClick">
+		</Button>
+
+		<Button
+			x:Name="buttonTuesday"
+			Text="T"
+			FontSize="20"
+			Grid.Row="2"
+			Grid.Column="1"
+			CommandParameter="Tuesday"
+			Clicked="OnDayButtonClick">
+		</Button>
+
+		<Button
+			x:Name="buttonWednesday"
+			Text="W"
+			FontSize="20"
+			Grid.Row="2"
+			Grid.Column="2"
+			CommandParameter="Wednesday"
+			Clicked="OnDayButtonClick">
+		</Button>
+
+		<Button
+			x:Name="buttonThursday"
+			Text="T"
+			FontSize="20"
+			Grid.Row="2"
+			Grid.Column="3"
+			CommandParameter="Thursday"
+			Clicked="OnDayButtonClick">
+		</Button>
+
+		<Button
+			x:Name="buttonFriday"
+			Text="F"
+			FontSize="20"
+			Grid.Row="2"
+			Grid.Column="4"
+			CommandParameter="Friday"
+			Clicked="OnDayButtonClick">
+		</Button>
+
+	</Grid>
+
+</ContentPage>
