@@ -8,3 +8,4 @@ A personal Android app for viewing my university timetable. Built using **C#** a
 - **Example HTML data**: an example of *timetable.html* is available in the *AppServer* folder
 
 ## Demo
+<img src="/Captures/Demo_AndroidDevice.gif" width="40%"/>
