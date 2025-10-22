@@ -1,6 +1,8 @@
 # University Timetable App 📚
 A personal Android app for viewing my university timetable. Built using **C#** and the **.NET MAUI** framework.
 
+The application is compatible with Windows, though it was primarily developed for Android mobile devices.
+
 ## Features
 - **Local storage**: timetable data is stored locally on the device
 - **Manual data reload**: user can manually refresh the timetable via pressing a button, which loads the data from a web server hosting a *timetable.html* page and saves the data locally
