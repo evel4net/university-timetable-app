@@ -1,4 +1,4 @@
-# University Timetable App
+# University Timetable App 📚
 A personal Android app for viewing my university timetable. Built using **C#** and the **.NET MAUI** framework.
 
 ## Features
